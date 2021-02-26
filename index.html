@@ -242,6 +242,17 @@
             </li>
         </ul>
     </section>
+    <section class="sign-in-box">
+    <h2 class="sign-in">Подпишитесь на рассылку</h2>
+    
+    <form action="" name="signup-form">
+        <label for="signup-form"></label>
+            <input type="email" name="email" id="signup-form" placeholder="E-mail"  class="signup-form">
+        
+        <button type="submit" class="signin-btn">Подписаться <svg class="icon-send" width="24" height="24"><use href="./icons-parttwo/icons.svg#icon-send"></use></svg></button>
+    </form>
+   
+    </section>
    
 </div>
 </footer>
@@ -249,7 +260,27 @@
     <div class="modal">
         <button class="closebtn" data-modal-close><svg class="close-btn" width="11" height="11">
                 <use href="./images/icons.svg#icon-close-btn"></use>
-            </svg></button>
+            </svg>
+        </button>
+        <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="" name="order-form" class="order-form">
+            
+            <label for="user-name">Имя</label>
+            <input type="text" name="name" id="user-name">
+
+            <label for="user-phone">Телефон</label>
+            <input type="phone" id="user-phone">
+
+            <label for="user-mail">Почта</label>
+            <input type="email" name="email" id="user-mail">
+
+            <label for="feedback">Комментарий</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+            <p class="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+
+            <button type="submit" class="sendback-form">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>

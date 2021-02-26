@@ -312,6 +312,15 @@ ul {
   background-color: #ffffff;
 }
 
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
 .closebtn:hover,
 .closebtn:focus {
   fill: var(--accent-color);
@@ -677,7 +686,8 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.join-us {
+.join-us,
+.sign-in {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -709,6 +719,34 @@ ul {
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sign-in-box {
+  margin-left: 93px;
+}
+
+.signin-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+  letter-spacing: 0.06em;
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+  margin-left: 12px;
+}
+
+.signup-form {
+  min-height: 50px;
+  min-width: 358px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {
+  /* margin-top: 13px; */
 }
 
 .foot-media {
