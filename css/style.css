@@ -240,6 +240,8 @@ ul {
   letter-spacing: 0.06em;
 }
 
+/* Modal window */
+
 .primary-btn {
   display: inline-block;
 
@@ -319,7 +321,7 @@ ul {
   padding-left: 41px;
   /* padding-top: 40px; */
   padding-right: 39px;
-  /* padding-bottom: 40px; */
+  padding-bottom: 40px;
 }
 
 .form-field {
@@ -350,9 +352,11 @@ textarea {
 }
 
 .input-border {
+  min-height: 40px;
+  min-width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
+  padding-left: 42px;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -391,6 +395,10 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.comment {
+  padding: 12px 16px;
+}
+
 .sendback-btn {
   justify-content: center;
   align-items: center;
@@ -402,13 +410,40 @@ textarea {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--primary-text-color);
+
+  background-color: #188ce8;
+  color: var(--hero-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sendback-btn:hover,
 .sendback-btn:focus {
-  background-color: #188ce8;
+  background-color: #2196f3;
   color: var(--hero-color);
+}
+
+.name-form {
+  position: relative;
+  min-width: 342px;
+}
+
+.form-icons {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-border:hover ~ .form-icons,
+.input-border:focus ~ .form-icons {
+  fill: var(--accent-color);
 }
 
 .customer-agreem {
@@ -817,6 +852,10 @@ textarea {
 
 .sign-in-box {
   margin-left: 93px;
+}
+
+.signup-box {
+  margin-top: 20px;
 }
 
 .signin-btn {
