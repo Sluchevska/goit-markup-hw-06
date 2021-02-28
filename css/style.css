@@ -331,11 +331,12 @@ ul {
 }
 
 .form-agreement {
+  position: relative;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.agreement {
+.checkbox {
   width: 16px;
   height: 15px;
   font-weight: 400;
@@ -345,9 +346,26 @@ ul {
   letter-spacing: 0.03em;
 
   color: #757575;
+  appearance: none;
 }
 
-textarea {
+.check-icon {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+}
+
+.checkbox:checked + .check-icon {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.textarea {
   resize: none;
 }
 

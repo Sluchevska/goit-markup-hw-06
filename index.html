@@ -282,19 +282,28 @@
 
             <div class="form-field">
                 <label for="user-tel" class="user-info">Телефон</label>
-                
+            <div class="name-form">
                 <input type="tel" id="user-tel" class="input-border">
+                <span class="form-icons">
                 <svg width="18" height="18">
                     <use href="./icons-parttwo/icons.svg#icon-phone"></use>
                 </svg>
-                
+            </span>
+            </div>
             </div>
 
 
 
             <div class="form-field">
                 <label for="user-mail" class="user-info">Почта</label>
+                <div class="name-form">
                 <input type="email" name="email" id="user-mail" class="input-border">
+                <span class="form-icons">
+                <svg width="18" height="18">
+                    <use href="./icons-parttwo/icons.svg#icon-email"></use>
+                </svg>
+                </span>
+                </div>
             </div>
 
             <div class="form-field">
@@ -304,8 +313,15 @@
 
             
             <div class="form-agreement">
-                <label >
-                    <input class="agreement" type="checkbox" name="agreement" value="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="customer-agreem">Условия договора</a></label>
+                <label class="check-agreement" >
+                    <input class="checkbox" type="checkbox" name="agreement" value="agreement">
+                    <span class="check-icon">
+                        <svg width="16" height="15">
+                            <use href="./icons-parttwo/icons.svg#icon-icon-check"></use>
+                        </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="customer-agreem">Условия договора</a>
+                    </label>
             </div>
             
             <button type="submit" class="sendback-btn">Отправить</button>
