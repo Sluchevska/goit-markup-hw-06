@@ -882,11 +882,12 @@ ul {
 }
 
 .signin-btn {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  text-align: center;
+  padding-left: 29px;
+  text-align: left;
   min-width: 200px;
   min-height: 50px;
   letter-spacing: 0.06em;
@@ -895,15 +896,28 @@ ul {
   margin-left: 12px;
 }
 
+.signin-btn::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  content: "";
+  background-image: url(../icons-parttwo/send.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 .signup-form {
   min-height: 50px;
   min-width: 358px;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
-.icon-send {
-  /* margin-top: 13px; */
-}
+/* .icon-send {
+  position: absolute;
+} */
 
 .foot-media {
   width: 20px;
