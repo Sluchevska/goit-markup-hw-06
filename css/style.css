@@ -347,6 +347,7 @@ ul {
 
   color: #757575;
   appearance: none;
+  outline-offset: 0;
 }
 
 .check-icon {
@@ -362,7 +363,11 @@ ul {
 
 .checkbox:checked + .check-icon {
   background-color: var(--accent-color);
-  border: none;
+  border-radius: 2px;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  background-image: url(../icons-parttwo/icon-check.svg);
+  background-size: contain;
 }
 
 .textarea {
