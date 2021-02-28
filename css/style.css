@@ -309,17 +309,15 @@ ul {
 
   min-width: 528px;
   min-height: 581px;
-  /* padding: 40px; */
 
   background-color: #ffffff;
 }
 
 .form {
-  /* width: 448px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 41px;
-  /* padding-top: 40px; */
+
   padding-right: 39px;
   padding-bottom: 40px;
 }
@@ -347,6 +345,7 @@ ul {
 
   color: #757575;
   appearance: none;
+  -webkit-appearance: none;
   outline-offset: 0;
 }
 
@@ -358,6 +357,7 @@ ul {
   content: "";
   width: 16px;
   height: 15px;
+  background-color: transparent;
   border: 1px solid var(--primary-text-color);
 }
 
@@ -366,11 +366,11 @@ ul {
   border-radius: 2px;
   background-origin: border-box;
   border-color: var(--accent-color);
-  background-image: url(../icons-parttwo/icon-check.svg);
+  background-image: url(../icons/icon-check.svg);
   background-size: contain;
 }
 
-.textarea {
+textarea {
   resize: none;
 }
 
@@ -902,7 +902,7 @@ ul {
   transform: translateY(-50%);
   display: inline-block;
   content: "";
-  background-image: url(../icons-parttwo/send.svg);
+  background-image: url(../icons/send.svg);
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -914,10 +914,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
 }
-
-/* .icon-send {
-  position: absolute;
-} */
 
 .foot-media {
   width: 20px;
