@@ -257,7 +257,7 @@ ul {
   text-decoration: none;
   align-items: center;
   letter-spacing: 0.06em;
-
+  border: none;
   border-radius: 4px;
   background-color: var(--accent-color);
 }
@@ -894,6 +894,7 @@ textarea {
   color: var(--hero-color);
   background-color: var(--accent-color);
   margin-left: 12px;
+  border: none;
 }
 
 .signin-btn::after {
@@ -913,6 +914,9 @@ textarea {
   min-width: 358px;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 .foot-media {
