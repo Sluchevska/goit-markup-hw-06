@@ -895,6 +895,7 @@ textarea {
   background-color: var(--accent-color);
   margin-left: 12px;
   border: none;
+  border-radius: 4px;
 }
 
 .signin-btn::after {
